@@ -20,7 +20,7 @@ error_reporting(E_ALL | E_STRICT);
 
 $gTimeZoneIsSet = false;
 //------------------
-//I need to see the zone it hold it during a temp switch
+// Holds the time zone during temporary switches
 //------------------
 function dateTimeGetZone(): string
 {

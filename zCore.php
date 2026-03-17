@@ -196,7 +196,7 @@ function strHasPrefixTest(): void
 {
     test(strHasPrefix('test', 'testing') === true, 'prefix there test');
     test(strHasPrefix('test', 'ing') === false, 'prefix not there test');
-    test(strHasPrefix('', 'testing') === true, 'empty prefix test');//there was a reason dad can't remember. might trip something up if not.
+    test(strHasPrefix('', 'testing') === true, 'empty prefix test');
     test(strHasPrefix('test', '') === false, 'empty string test');
 }
 //-------------

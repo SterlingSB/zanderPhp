@@ -82,7 +82,7 @@ function httpGetByCurl(string $url, array $headers = [], array $options = []): s
         }
         $curlInfo = curl_getinfo($handle);
         $errCode = $curlInfo['http_code'];
-        //maybe this should send the error code on in a header
+        // TODO: Consider sending the error code in a header
         if ($errCode != 200) {
             $val = is_string($urlResult) ? $urlResult : 'null';
             filelog("remoteHttpErrorCode: $errCode, remoteValue: $val");

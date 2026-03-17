@@ -45,5 +45,3 @@ zMathTest(); //no tests
 zColorDomeTest();
 
 echoLineBlockFinish('zPhpTest');
-
-fileWrite('a', 'a.txt');

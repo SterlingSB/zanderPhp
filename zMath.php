@@ -693,7 +693,7 @@ function zMathTest(): void
     echoLineBlockFinish('zMathTest');
 }
 //--------------------------
-//I wish to keep this code as a referance
+
 /*function pointWhereLinesCross($lineAx1, $lineAy1, $lineAx2, $lineAy2, $lineBx1, $lineBy1, $lineBx2, $lineBy2, &$crossX, &$crossY) {
     //y = mx+b
     //b = y-mx

@@ -298,7 +298,7 @@ function dbSelectValue(string $sql, array $params = []): mixed
     }
 }
 //------------------
-//this function is used in inserts and updates. numbers are converted to strings I am not sure why
+//this function is used in inserts and updates. numbers are converted to strings for PDO compatibility.
 //------------------
 function dbValueToSqlImportValue(mixed $value): string
 {
@@ -323,7 +323,7 @@ function dbValueToSqlImportValueTest(): void
     test(dbValueToSqlImportValue("O'Reilly") === "'O''Reilly'", 'string escape test');
 }
 //------------------
-//not sure if this is better than dbValueToSqlImportValue
+
 //------------------
 function dbValueToSqlValue(mixed $value): string
 {

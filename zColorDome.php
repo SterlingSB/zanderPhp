@@ -135,7 +135,7 @@ function hcwToRgbTest(): void {
 }
 //------------------------------------------------------------------------------
 //This function should never need to be called directly. 
-//not sure if the logic is correct
+
 //------------------------------------------------------------------------------
 function maxIlluminationForHg(float $hue, float $grayness): float {
     checkNumInRange($hue, 0, cRadFullTurn, 'Hue out of range');
