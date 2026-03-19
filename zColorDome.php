@@ -267,7 +267,7 @@ function rgbToHgl($red, $green, $blue, &$hue, &$grayness, &$luminance) {
 
     //find illumination
     $illumination = sqrt(($chroma * $chroma) + ($white * $white));
-    checkNumInRange($illumination, 0, maxIlluminationForHg($grayness, $hue), 'Gray output out of range');
+    checkNumInRange($illumination, 0, maxIlluminationForHg($hue, $grayness), 'Illumination output out of range');
 }
 //------------------------------------------------------------------------------
 function numNormToStandardHueRangeNorm(float $numNorm): float {
@@ -276,7 +276,7 @@ function numNormToStandardHueRangeNorm(float $numNorm): float {
 //------------------------------------------------------------------------------
 function strToStandardHueRangeNorm(string $string): float {
     $norm = strToNorm($string);
-    return numNormToStandHueRangeNorm($norm);
+    return numNormToStandardHueRangeNorm($norm);
 }
 //------------------------------------------------------------------------------
 function zColorDomeTest(): void {
